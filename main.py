@@ -1,5 +1,6 @@
-import requests, json
+import requests, json, pandas, numpy, nltk
 from pycoingecko import CoinGeckoAPI
+import matplotlib.pyplot as plot
 
 def print_hi(name):
     print(f'Hi, {name}')
