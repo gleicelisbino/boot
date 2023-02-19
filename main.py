@@ -1,6 +1,14 @@
+import pandas as pd
 import requests, json, pandas, numpy, nltk
 from pycoingecko import CoinGeckoAPI
 import matplotlib.pyplot as plot
+
+training = [
+    ('I like Bitcoin', 'happy'),
+    ('I like Dogcoin', 'happy')
+]
+example = pd.DataFrame(training)
+example.columns = ['Phrase', 'Feeling']
 
 def print_hi(name):
     print(f'Hi, {name}')
