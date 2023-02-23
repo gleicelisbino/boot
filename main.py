@@ -1,9 +1,12 @@
 import pandas as pd
-import requests, numpy, nltk
+import requests, numpy
 import json
 from pycoingecko import CoinGeckoAPI
 from textblob import TextBlob
-
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('averaged_perceptron_tagger')
 def print_hi(name):
     print(f'Hi, {name}')
 #kind=news
