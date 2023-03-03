@@ -3,9 +3,9 @@ import time
 import yfinance as yf
 from datetime import datetime, timedelta
 from GoogleNews import GoogleNews
-def print_hi(name):
-    print(f'Hi, {name}')
-#kind=news
+
+start = datetime.now() - timedelta(days=7)
+end = datetime.now()
 def getNews():
     url = 'https://cryptopanic.com/api/v1/posts/?auth_token=45a3abde3f2ed8d46084b1edd357ae28c250ca6e&currencies=BTC&filter=rising'
     results = requests.get(url).json()["results"]
