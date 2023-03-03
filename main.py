@@ -1,12 +1,8 @@
 import pandas as pd
-import requests, numpy
-import json
-from pycoingecko import CoinGeckoAPI
-from textblob import TextBlob
-import nltk
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('averaged_perceptron_tagger')
+import time
+import yfinance as yf
+from datetime import datetime, timedelta
+from GoogleNews import GoogleNews
 def print_hi(name):
     print(f'Hi, {name}')
 #kind=news
